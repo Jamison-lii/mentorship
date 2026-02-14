@@ -1,0 +1,39 @@
+{
+  "properties": [
+    {
+      "id": "1",
+      "title": "Land investment in Bomaka",
+      "location": "Buea, SW Region",
+      "targetAmount": 20000000,
+      "amountRaised": 5000000,
+      "pricePerFraction": 100000,
+      "totalFractions": 20,
+      "fractionsTaken": 5,
+      "duration": "30 days",
+      "description": "Prime fertile land suitable for residential construction near the university."
+    },
+    {
+      "id": "2",
+      "title": "Akwa Business Suite",
+      "location": "Douala, LT Region",
+      "targetAmount": 50000000,
+      "amountRaised": 45000000,
+      "pricePerFraction": 5000000,
+      "totalFractions": 10,
+      "fractionsTaken": 9,
+      "duration": "15 days",
+      "description": "Commercial space in the heart of Douala's business district."
+    }
+  ],
+  "investments": [
+    {
+      "id": "1257",
+      "propertyId": "1",
+      "propertyName": "Land investment in Bomaka",
+      "investorName": "Junior",
+      "fractions": 1,
+      "amountSpent": 100000,
+      "date": "2/9/2026"
+    }
+  ]
+}
