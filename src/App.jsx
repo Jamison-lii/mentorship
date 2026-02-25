@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Layout from './components/Layout';
+import Layout from './Components/Layout';
 import Marketplace from './Pages/MarketPlace';
 import OpportunityDetails from './Pages/OpportunityDetails';
 import Dashboard from './Pages/Dashboard';
