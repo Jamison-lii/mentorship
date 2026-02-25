@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { supabase } from '../supabaseClient';
-import OpportunityCard from '../components/OpportunityCard';
+import OpportunityCard from '../Components/OpportunityCard';
 
 export default function Marketplace() {
   const [opportunities, setOpportunities] = useState([]);
