@@ -1,26 +1,31 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './Components/Navbar';
+import Layout from './components/Layout';
 import Marketplace from './Pages/MarketPlace';
-import PropertyDetail from './Pages/PropertyDetail';
-import { UserProvider } from './context/userContext';
-import Portfolio from './Pages/Portfolio';
-import LandingPage from './Pages/LandingPage';
+import OpportunityDetails from './Pages/OpportunityDetails';
+import Dashboard from './Pages/Dashboard';
+import CreateListing from './Pages/CreateListing';
+import Auth from './Pages/Auth';
+import AdminPanel from './Pages/AdminPanel';
+import Verification from './Pages/Verification';
+// Import your Signup/Login pages here once you create the files
+// import Signup from './pages/Signup'; 
 
 function App() {
   return (
-    <UserProvider>
-      <Router>
-        <div className="min-h-screen bg-gray-50">
-          <Navbar />
-          <Routes>
-            <Route path="/" element={<LandingPage />} />
-            <Route path='/marketplace' element={<Marketplace />} />
-            <Route path="/property/:id" element={<PropertyDetail />} />
-            <Route path="/portfolio" element={<Portfolio />} />
-          </Routes>
-        </div>
-      </Router>
-    </UserProvider>
+    <Router>
+      <Layout>
+       <Routes>
+  <Route path="/" element={<Marketplace />} />
+  <Route path="/opportunity/:id" element={<OpportunityDetails />} />
+  <Route path="/auth" element={<Auth />} />
+  <Route path="/dashboard" element={<Dashboard />} />
+  <Route path="/create-listing" element={<CreateListing />} />
+  <Route path="/admin" element={<AdminPanel />} />
+  <Route path="/verification" element={<Verification />} />
+</Routes>
+      </Layout>
+    </Router>
   );
 }
+
 export default App;
